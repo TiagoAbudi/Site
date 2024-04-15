@@ -142,7 +142,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 54px 14px;
+    padding: 40px 14px;
 }
 
 .services-content h2 {
@@ -273,8 +273,116 @@
 }
 
 @media screen and (max-width: 665px) {
-    .copyright{
+    .copyright {
         text-align: center;
         margin-bottom: 20px;
     }
+}
+
+.contact {
+    color: $white-normal;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+.form {
+    display: flex;
+}
+
+.contact-info {
+    margin: 12px;
+}
+
+.contact-form {
+    margin: 12px
+}
+
+.box {
+    display: flex;
+}
+
+.icon {
+    width: 40px;
+}
+
+.input-box input,
+.input-box textarea {
+    color: $white-normal;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid $black-normal;
+    outline: none;
+    background-color: transparent;
+    resize: none;
+}
+
+.titulo-contato {
+    margin-bottom: 10px;
+}
+
+.btn-enviar {
+    color: $white-normal;
+    font-weight: 600;
+    padding: 14px 25px;
+    background-color: $red-light;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    background-color: $red-dark;
+    animation: translateY 0.9s infinite alternate;
+}
+
+@media screen and (max-width: 768px) {
+    .form {
+        flex-direction: column;
+    }
+}
+
+.tab {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: $white-normal;
+    padding: 0 40px;
+}
+
+.tablinks {
+    margin: 0 5px;
+    text-decoration: none;
+    color: $black-normal;
+    border-bottom: 1px solid $black-normal;
+    font-size: 20px;
+    padding: 5px;
+    height: 40px;
+}
+
+.tablinks:hover {
+    background-color: $tab-bg;
+}
+
+@media screen and (max-width: 425px) {
+    .tablinks {font-size: 11px;}
+}
+
+.back-to-top{
+    position: fixed;
+    bottom: 14px;
+    left: 24px;
+    z-index: 99;
+}
+
+.scroll{
+    color: $red-dark;
+    font-size: 20px;
 }

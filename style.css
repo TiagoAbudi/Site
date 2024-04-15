@@ -5,6 +5,10 @@
   outline: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   width: 100%;
 }
@@ -20,6 +24,7 @@ i {
 }
 
 .header-icons {
+  font-size: 8px;
   display: flex;
   gap: 14px;
 }
@@ -207,7 +212,7 @@ i {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 54px 14px;
+  padding: 40px 14px;
 }
 
 .services-content h2 {
@@ -334,6 +339,114 @@ i {
     margin-bottom: 20px;
   }
 }
+.contact {
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 14px;
+}
+
+.form {
+  display: flex;
+}
+
+.contact-info {
+  margin: 12px;
+}
+
+.contact-form {
+  margin: 12px;
+}
+
+.box {
+  display: flex;
+}
+
+.icon {
+  width: 40px;
+}
+
+.input-box input,
+.input-box textarea {
+  color: #fff;
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #232224;
+  outline: none;
+  background-color: transparent;
+  resize: none;
+}
+
+.titulo-contato {
+  margin-bottom: 10px;
+}
+
+.btn-enviar {
+  color: #fff;
+  font-weight: 600;
+  padding: 14px 25px;
+  background-color: #d34040;
+  font-size: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-enviar:hover {
+  background-color: #b42b2b;
+  animation: translateY 0.9s infinite alternate;
+}
+
+@media screen and (max-width: 768px) {
+  .form {
+    flex-direction: column;
+  }
+}
+.tab {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #fff;
+  padding: 0 40px;
+}
+
+.tablinks {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #232224;
+  border-bottom: 1px solid #232224;
+  font-size: 20px;
+  padding: 5px;
+  height: 40px;
+}
+
+.tablinks:hover {
+  background-color: #eeeeee;
+}
+
+@media screen and (max-width: 425px) {
+  .tablinks {
+    font-size: 11px;
+  }
+}
+.back-to-top {
+  position: fixed;
+  bottom: 14px;
+  left: 24px;
+  z-index: 99;
+}
+
+.scroll {
+  color: #b42b2b;
+  font-size: 20px;
+}
+
 body {
   font-family: "Sora", sans-serif;
   width: 100%;
