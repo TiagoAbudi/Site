@@ -300,6 +300,9 @@
     .form {
         flex-direction: column;
     }
+    .contact{
+        width: 100%;
+    }
 }
 
 .contact-form {
@@ -413,6 +416,7 @@
 @media screen and (max-width: 768px) {
     .form {
         flex-direction: column;
+        // width: 100%;
     }
 }
 
@@ -435,6 +439,8 @@
     padding: 5px;
     height: 40px;
     z-index: 99;
+    background-color: transparent;
+    transition: background-color 0.8s;
 }
 
 .tablinks:hover {
