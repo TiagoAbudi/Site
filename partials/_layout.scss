@@ -300,7 +300,8 @@
     .form {
         flex-direction: column;
     }
-    .contact{
+
+    .contact {
         width: 100%;
     }
 }
@@ -405,7 +406,7 @@
 }
 
 .mapa {
-   border-radius: 15px;
+    border-radius: 15px;
 }
 
 .btn-enviar:hover {
@@ -425,22 +426,23 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    padding: 0 40px;
+    padding: 0 15px;
     position: fixed;
     z-index: 99;
 }
-
 .tablinks {
-    margin: 0 5px;
+    text-align: center;
     text-decoration: none;
     color: $white-normal;
-    border-bottom: 1px solid $black-normal;
-    font-size: 20px;
+    font-size: 15px;
     padding: 5px;
-    height: 40px;
     z-index: 99;
     background-color: transparent;
     transition: background-color 0.8s;
+    font-family: 'Montserrat', 'Sora', sans-serif;
+    font-weight: 200;
+    border-radius: 5px;
+    margin: 5px;
 }
 
 .tablinks:hover {
@@ -448,7 +450,9 @@
 }
 
 @media screen and (max-width: 768px) {
-    .tab, .tablinks {
+
+    .tab,
+    .tablinks {
         display: none;
     }
 }
@@ -568,6 +572,6 @@
     text-decoration: none;
 }
 
-.tab a.actived{
+.tab a.actived {
     background-color: $red-light;
 }

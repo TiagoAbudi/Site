@@ -10,7 +10,7 @@ let sections = document.querySelectorAll('.sections-products')
 window.addEventListener('scroll', () => {
   sections.forEach(section => {
     let top = window.scrollY;
-    let offset = section.offsetTop - 40;
+    let offset = section.offsetTop - 39;
     let heightSection = section.offsetHeight;
     let idSection = section.getAttribute('id');
 
@@ -29,7 +29,7 @@ function scrollSection(event) {
   const href = event.currentTarget.getAttribute('href');
   const section = document.querySelector(href)
 
-  const topSection = section.offsetTop - 40;
+  const topSection = section.offsetTop - 39;
 
   window.scrollTo({
     top: topSection,
