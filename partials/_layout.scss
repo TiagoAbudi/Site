@@ -280,25 +280,48 @@
 }
 
 .contact {
-    color: $white-normal;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding: 14px;
+    padding: 50px;
 }
 
 .form {
+    width: fit-content;
     display: flex;
+    padding: 14px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    background-color: $white-dark;
+    box-shadow: 10px 7px 5px $card-shadow;
 }
 
-.contact-info {
-    margin: 12px;
+@media screen and (max-width: 768px) {
+    .form {
+        flex-direction: column;
+    }
 }
 
 .contact-form {
-    margin: 12px
+    margin-left: 10px;
+    height: 380px;
+    width: 400px;
+}
+
+.contate-nos-titulo {
+    width: fit-content;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 2px solid $red-light;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.contate-nos-titulo-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .box {
@@ -309,18 +332,57 @@
     width: 40px;
 }
 
-.input-box input,
-.input-box textarea {
-    color: $white-normal;
+.single-input {
+    position: relative;
+    margin: 30px 0;
+}
+
+.single-input label {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    color: rgb(150, 150, 150);
+    cursor: text;
+    transition: 0.3s ease-in-out;
+}
+
+.input,
+.input-text {
     width: 100%;
-    padding: 5px 0;
+    padding: 5px;
+    border: 0;
+    border-bottom: 2px solid rgb(200, 200, 200);
+    outline: 0;
     font-size: 16px;
-    margin: 10px 0;
-    border: none;
-    border-bottom: 2px solid $black-normal;
-    outline: none;
+    color: $black-normal;
+    transition: 0.3s ease-in-out;
     background-color: transparent;
     resize: none;
+}
+
+.input:focus,
+.input:valid,
+.input-text:focus,
+.input-text:valid {
+    border-bottom: 2px solid $red-light;
+}
+
+.input:focus~label,
+.input:valid~label {
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: $red-light;
+}
+
+.input-text:focus~label,
+.input-text:valid~label {
+    transform: translateY(-50px);
+    font-size: 12px;
+    color: $red-light;
+}
+
+.input-box textarea {
+    margin-bottom: 20px;
 }
 
 .titulo-contato {
@@ -328,6 +390,8 @@
 }
 
 .btn-enviar {
+    bottom: 0;
+    float: right;
     color: $white-normal;
     font-weight: 600;
     padding: 14px 25px;
@@ -335,6 +399,10 @@
     font-size: 20px;
     border-radius: 20px;
     cursor: pointer;
+}
+
+.mapa {
+   border-radius: 15px;
 }
 
 .btn-enviar:hover {
@@ -370,41 +438,43 @@
 }
 
 .tablinks:hover {
-    background-color: $tab-bg;
+    background-color: $red-light;
 }
 
-@media screen and (max-width: 425px) {
-    .tablinks {font-size: 11px;}
+@media screen and (max-width: 768px) {
+    .tab, .tablinks {
+        display: none;
+    }
 }
 
-.back-to-top{
+.back-to-top {
     position: fixed;
     bottom: 14px;
     left: 24px;
     z-index: 99;
 }
 
-.scroll{
+.scroll {
     color: $red-dark;
     font-size: 20px;
 }
 
-.container-parallax{
+.container-parallax {
     width: 100%;
     max-width: 720px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.module p{
+.module p {
     margin-bottom: 40px;
 }
 
-.module:last-child{
+.module:last-child {
     margin-bottom: 0;
 }
 
-.module h2{
+.module h2 {
     margin-bottom: 40px;
     font-size: 30px;
     font-weight: 900;
@@ -426,24 +496,24 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    -webkit-backgeround-size:cover;
+    -webkit-backgeround-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
 }
 
-.parallax:after{
+.parallax:after {
     content: "";
     height: 100%;
     width: 100%;
     position: absolute;
     z-index: 8;
-    background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, $black-normal 100%);
-    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, $black-normal 100%);
-    background: -o-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, $black-normal 100%);
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, $black-normal 100%);
+    background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, $black-normal 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, $black-normal 100%);
+    background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, $black-normal 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, $black-normal 100%);
 }
 
-.parallax-1{
+.parallax-1 {
     background-image: url('../assets/Dashboard.png');
 }
 
@@ -457,12 +527,41 @@
     font-weight: 200;
 }
 
+.parallax-2 {
+    background-image: url('../assets/Component\ 1.png');
+}
+
+.parallax-3 {
+    background-image: url('../assets/imagem\ padrao.png');
+}
+
+.parallax-4 {
+    background-image: url('../assets/imagem\ padrao.png');
+}
+
+.parallax-5 {
+    background-image: url('../assets/imagem\ padrao.png');
+}
+
 @media screen and (max-width: 768px) {
     .parallax h1 {
         font-size: 48px;
-    }   
+    }
 }
 
-.rolagem{
-    background-color: $primary-normal;
+.rolagem {
+    background: $primary-light;
+}
+
+.contato-infos {
+    font-size: 12px;
+}
+
+.contato-infos a {
+    color: $white-normal;
+    text-decoration: none;
+}
+
+.tab a.actived{
+    background-color: $red-light;
 }
