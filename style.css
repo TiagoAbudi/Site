@@ -61,7 +61,7 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 14px;
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 768px) {
@@ -412,18 +412,20 @@ i {
   justify-content: center;
   align-items: center;
   display: flex;
-  background-color: #fff;
   padding: 0 40px;
+  position: fixed;
+  z-index: 99;
 }
 
 .tablinks {
   margin: 0 5px;
   text-decoration: none;
-  color: #232224;
+  color: #fff;
   border-bottom: 1px solid #232224;
   font-size: 20px;
   padding: 5px;
   height: 40px;
+  z-index: 99;
 }
 
 .tablinks:hover {
@@ -517,6 +519,10 @@ i {
     font-size: 48px;
   }
 }
+.rolagem {
+  background-color: #06121e;
+}
+
 body {
   font-family: "Sora", sans-serif;
   width: 100%;
