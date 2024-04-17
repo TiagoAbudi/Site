@@ -5,13 +5,19 @@
     outline: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 @import 'partials/colors';
 @import 'partials/header';
 @import 'partials/layout';
+@import 'partials/parallax';
+@import 'partials/footer';
+@import 'partials/contactUs';
+@import 'partials/home';
+@import 'partials/about';
+@import 'partials/responsive';
 
 body {
     font-family: 'Montserrat', 'Sora', sans-serif;

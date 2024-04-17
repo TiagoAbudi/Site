@@ -1,0 +1,101 @@
+.form {
+    width: fit-content;
+    display: flex;
+    padding: 14px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    background-color: $white-dark;
+    box-shadow: 10px 7px 5px $card-shadow;
+}
+
+.contact-form {
+    margin-left: 10px;
+    height: 380px;
+    width: 400px;
+}
+
+.contate-nos-titulo {
+    width: fit-content;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 2px solid $red-light;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.contate-nos-titulo-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.single-input {
+    position: relative;
+    margin: 30px 0;
+}
+
+.single-input label {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    color: rgb(150, 150, 150);
+    cursor: text;
+    transition: 0.3s ease-in-out;
+}
+
+.input,
+.input-text {
+    width: 100%;
+    padding: 5px;
+    border: 0;
+    border-bottom: 2px solid rgb(200, 200, 200);
+    outline: 0;
+    font-size: 16px;
+    color: $black-normal;
+    transition: 0.3s ease-in-out;
+    background-color: transparent;
+    resize: none;
+}
+
+.input:focus,
+.input:valid,
+.input-text:focus,
+.input-text:valid {
+    border-bottom: 2px solid $red-light;
+}
+
+.input:focus~label,
+.input:valid~label {
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: $red-light;
+}
+
+.input-text:focus~label,
+.input-text:valid~label {
+    transform: translateY(-50px);
+    font-size: 12px;
+    color: $red-light;
+}
+
+.btn-enviar {
+    bottom: 0;
+    float: right;
+    color: $white-normal;
+    font-weight: 600;
+    padding: 14px 25px;
+    background-color: $red-light;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.mapa {
+    border-radius: 15px;
+}
+
+.btn-enviar:hover {
+    background-color: $red-dark;
+    animation: translateY 0.9s infinite alternate;
+}

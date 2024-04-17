@@ -1,0 +1,108 @@
+.services {
+    background-color: $white-normal;
+    color: $black-normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 14px;
+}
+
+.services-content h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 14px;
+}
+
+.services-content p {
+    line-height: 150%;
+    margin-bottom: 14px;
+    text-align: center;
+    max-width: 780px;
+}
+
+.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-backgeround-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.parallax:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, $black-normal 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, $black-normal 100%);
+    background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, $black-normal 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, $black-normal 100%);
+}
+
+.parallax-1 {
+    background-image: url('../assets/Dashboard.png');
+}
+
+.parallax h1 {
+    color: $white-normal;
+    text-align: center;
+    font-size: 78px;
+    z-index: 50;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.parallax-2 {
+    background-image: url('../assets/Component\ 1.png');
+}
+
+.parallax-3 {
+    background-image: url('../assets/imagem\ padrao.png');
+}
+
+.parallax-4 {
+    background-image: url('../assets/imagem\ padrao.png');
+}
+
+.parallax-5 {
+    background-image: url('../assets/imagem\ padrao.png');
+}
+
+
+.container-parallax {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.module p {
+    margin-bottom: 40px;
+}
+
+.module:last-child {
+    margin-bottom: 0;
+}
+
+.module h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.content {
+    padding: 40px 0;
+}
