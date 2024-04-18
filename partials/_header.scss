@@ -25,16 +25,6 @@ i {
     }
 }
 
-@keyframes translateY {
-    from {
-        transform: translateY(0) scale(1);
-    }
-
-    to {
-        transform: translateY(-8px) scale(1.1);
-    }
-}
-
 .header-button {
     border: 1px solid $white-normal;
     padding: 8px 24px;
@@ -83,7 +73,7 @@ i {
 }
 
 .tablinks:hover {
-    background-color: $red-light;
+    background-color: $red-light-50-percent;
 }
 
 .back-to-top {

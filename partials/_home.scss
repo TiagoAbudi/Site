@@ -7,7 +7,7 @@
     content: '';
     display: block;
     position: absolute;
-    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.8), #06121e), url('../assets/background.svg');
+    background-image: $bg-home-grad;
     left: 0;
     top: 0;
     width: 100%;
@@ -55,14 +55,4 @@
 
 .button-contact:hover {
     animation: scaleButton 0.8s alternate infinite;
-}
-
-@keyframes scaleButton {
-    from {
-        transform: scale(1);
-    }
-
-    to {
-        transform: scale(1.07);
-    }
 }
