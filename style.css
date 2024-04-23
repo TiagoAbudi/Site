@@ -167,6 +167,7 @@ i {
   text-align: center;
   max-width: 780px;
   text-align: justify;
+  text-justify: distribute;
 }
 
 .parallax {
@@ -211,6 +212,7 @@ i {
 }
 .container-parallax p {
   text-align: justify;
+  text-justify: distribute;
 }
 
 .parallax-1 {
@@ -468,6 +470,7 @@ i {
   margin-bottom: 14px;
   line-height: 150%;
   text-align: justify;
+  text-justify: distribute;
 }
 
 @media screen and (max-width: 665px) {
