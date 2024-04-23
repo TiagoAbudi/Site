@@ -260,13 +260,6 @@ i {
   color: rgb(255, 255, 255);
 }
 
-.contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-}
-
 .contato-infos {
   font-size: 12px;
 }
@@ -289,7 +282,7 @@ i {
 .contact-form {
   margin-left: 10px;
   height: 380px;
-  width: 400px;
+  width: 100%;
 }
 
 .contate-nos-titulo {
@@ -324,7 +317,7 @@ i {
 
 .input,
 .input-text {
-  width: 100%;
+  width: 330px;
   padding: 5px;
   border: 0;
   border-bottom: 2px solid rgb(200, 200, 200);
@@ -376,6 +369,20 @@ i {
 .btn-enviar:hover {
   background-color: rgb(180, 43, 43);
   animation: translateY 0.9s infinite alternate;
+}
+
+.btn-box {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
 }
 
 .bg-home {
@@ -512,6 +519,7 @@ i {
   }
   .form {
     flex-direction: column;
+    width: 360px;
   }
   .contact {
     width: 100%;

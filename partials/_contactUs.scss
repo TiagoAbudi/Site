@@ -1,7 +1,6 @@
 .form {
     width: fit-content;
     display: flex;
-    // padding: 14px;
     border: 1px solid transparent;
     border-radius: 25px;
     background-color: $white-dark;
@@ -11,7 +10,7 @@
 .contact-form {
     margin-left: 10px;
     height: 380px;
-    width: 400px;
+    width: 100%;
 }
 
 .contate-nos-titulo {
@@ -46,7 +45,7 @@
 
 .input,
 .input-text {
-    width: 100%;
+    width: 330px;
     padding: 5px;
     border: 0;
     border-bottom: 2px solid $border-input;
@@ -98,4 +97,19 @@
 .btn-enviar:hover {
     background-color: $red-dark;
     animation: translateY 0.9s infinite alternate;
+}
+
+.btn-box {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
 }
