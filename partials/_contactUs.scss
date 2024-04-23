@@ -1,7 +1,7 @@
 .form {
     width: fit-content;
     display: flex;
-    padding: 14px;
+    // padding: 14px;
     border: 1px solid transparent;
     border-radius: 25px;
     background-color: $white-dark;
@@ -33,15 +33,15 @@
 .single-input {
     position: relative;
     margin: 30px 0;
-}
 
-.single-input label {
-    position: absolute;
-    bottom: 5px;
-    left: 0;
-    color: $label-input;
-    cursor: text;
-    transition: 0.3s ease-in-out;
+    label {
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        color: $label-input;
+        cursor: text;
+        transition: 0.3s ease-in-out;
+    }
 }
 
 .input,

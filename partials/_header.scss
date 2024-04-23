@@ -16,12 +16,12 @@ i {
     font-size: 8px;
     display: flex;
     gap: 14px;
-}
 
-.header-icons a:hover {
-    i {
-        animation: translateY 0.8s infinite alternate;
-        color: $red-light;
+    a:hover {
+        i {
+            animation: translateY 0.8s infinite alternate;
+            color: $red-light;
+        }
     }
 }
 
@@ -55,6 +55,10 @@ i {
     padding: 0 15px;
     position: fixed;
     z-index: 99;
+
+    a.actived {
+        background-color: $red-light;
+    }
 }
 
 .tablinks {
@@ -90,8 +94,4 @@ i {
 
 .rolagem {
     background: $primary-light;
-}
-
-.tab a.actived {
-    background-color: $red-light;
 }

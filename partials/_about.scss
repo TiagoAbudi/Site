@@ -14,10 +14,10 @@
     img {
         max-width: 570px;
     }
-}
 
-.about-content div {
-    flex: 1;
+    div {
+        flex: 1;
+    }
 }
 
 .about-description {
@@ -29,5 +29,6 @@
     p {
         margin-bottom: 14px;
         line-height: 150%;
+        text-align: justify;
     }
 }

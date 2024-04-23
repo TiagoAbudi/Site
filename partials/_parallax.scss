@@ -1,6 +1,6 @@
 .services {
-    background-color: $white-normal;
-    color: $black-normal;
+    background-color: $primary-normal;
+    color: $white-normal;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,6 +20,7 @@
     margin-bottom: 14px;
     text-align: center;
     max-width: 780px;
+    text-align: justify;
 }
 
 .parallax {
@@ -27,7 +28,7 @@
     flex-direction: column;
     justify-content: center;
     height: 100vh !important;
-    width: 100%;
+    width: 98.8vw;
     position: relative;
     overflow: hidden;
     background-position: 50% 50%;
@@ -37,6 +38,16 @@
     -webkit-backgeround-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+
+    h1 {
+        color: $white-normal;
+        text-align: center;
+        font-size: 78px;
+        z-index: 50;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-weight: 200;
+    }
 }
 
 .parallax:after {
@@ -51,18 +62,19 @@
     background: $parallax-grad;
 }
 
-.parallax-1 {
-    background-image: url('../assets/Dashboard.png');
+.container-parallax {
+    width: 100%;
+    max-width: 720px;
+    // margin: 0 0;
+    padding: 0 20px;
+
+    p {
+        text-align: justify;
+    }
 }
 
-.parallax h1 {
-    color: $white-normal;
-    text-align: center;
-    font-size: 78px;
-    z-index: 50;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    font-weight: 200;
+.parallax-1 {
+    background-image: url('../assets/Dashboard.png');
 }
 
 .parallax-2 {
@@ -74,33 +86,27 @@
 }
 
 .parallax-4 {
-    background-image: url('../assets/imagem\ padrao.png');
+    background-image: url('../assets/Tire\ sua\ ideia\ do\ papel.jpg');
 }
 
 .parallax-5 {
     background-image: url('../assets/imagem\ padrao.png');
 }
 
+.module {
+    h2 {
+        margin-bottom: 40px;
+        font-size: 30px;
+        font-weight: 900;
+    }
 
-.container-parallax {
-    width: 100%;
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.module p {
-    margin-bottom: 40px;
+    p {
+        margin-bottom: 40px;
+    }
 }
 
 .module:last-child {
     margin-bottom: 0;
-}
-
-.module h2 {
-    margin-bottom: 40px;
-    font-size: 30px;
-    font-weight: 900;
 }
 
 .content {

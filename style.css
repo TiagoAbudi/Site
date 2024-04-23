@@ -28,7 +28,6 @@ i {
   display: flex;
   gap: 14px;
 }
-
 .header-icons a:hover i {
   animation: translateY 0.8s infinite alternate;
   color: rgb(211, 64, 64);
@@ -65,6 +64,9 @@ i {
   position: fixed;
   z-index: 99;
 }
+.tab a.actived {
+  background-color: rgb(211, 64, 64);
+}
 
 .tablinks {
   text-align: center;
@@ -99,10 +101,6 @@ i {
 
 .rolagem {
   background: rgb(12, 33, 53);
-}
-
-.tab a.actived {
-  background-color: rgb(211, 64, 64);
 }
 
 .container {
@@ -147,8 +145,8 @@ i {
 }
 
 .services {
-  background-color: rgb(255, 255, 255);
-  color: rgb(35, 34, 36);
+  background-color: rgb(6, 18, 30);
+  color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -168,6 +166,7 @@ i {
   margin-bottom: 14px;
   text-align: center;
   max-width: 780px;
+  text-align: justify;
 }
 
 .parallax {
@@ -175,7 +174,7 @@ i {
   flex-direction: column;
   justify-content: center;
   height: 100vh !important;
-  width: 100%;
+  width: 98.8vw;
   position: relative;
   overflow: hidden;
   background-position: 50% 50%;
@@ -186,20 +185,6 @@ i {
   -moz-background-size: cover;
   -o-background-size: cover;
 }
-
-.parallax:after {
-  content: "";
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: 8;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, rgb(35, 34, 36) 100%);
-}
-
-.parallax-1 {
-  background-image: url("../assets/Dashboard.png");
-}
-
 .parallax h1 {
   color: rgb(255, 255, 255);
   text-align: center;
@@ -208,6 +193,28 @@ i {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 200;
+}
+
+.parallax:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, rgb(6, 18, 30) 100%);
+}
+
+.container-parallax {
+  width: 100%;
+  max-width: 720px;
+  padding: 0 20px;
+}
+.container-parallax p {
+  text-align: justify;
+}
+
+.parallax-1 {
+  background-image: url("../assets/Dashboard.png");
 }
 
 .parallax-2 {
@@ -219,32 +226,24 @@ i {
 }
 
 .parallax-4 {
-  background-image: url("../assets/imagem padrao.png");
+  background-image: url("../assets/Tire sua ideia do papel.jpg");
 }
 
 .parallax-5 {
   background-image: url("../assets/imagem padrao.png");
 }
 
-.container-parallax {
-  width: 100%;
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 0 20px;
+.module h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: 900;
 }
-
 .module p {
   margin-bottom: 40px;
 }
 
 .module:last-child {
   margin-bottom: 0;
-}
-
-.module h2 {
-  margin-bottom: 40px;
-  font-size: 30px;
-  font-weight: 900;
 }
 
 .content {
@@ -265,7 +264,7 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 15px;
 }
 
 .contato-infos {
@@ -281,7 +280,6 @@ i {
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
-  padding: 14px;
   border: 1px solid transparent;
   border-radius: 25px;
   background-color: rgb(237, 234, 239);
@@ -315,7 +313,6 @@ i {
   position: relative;
   margin: 30px 0;
 }
-
 .single-input label {
   position: absolute;
   bottom: 5px;
@@ -452,7 +449,6 @@ i {
 .about-content img {
   max-width: 570px;
 }
-
 .about-content div {
   flex: 1;
 }
@@ -464,6 +460,7 @@ i {
 .about-description p {
   margin-bottom: 14px;
   line-height: 150%;
+  text-align: justify;
 }
 
 @media screen and (max-width: 665px) {
