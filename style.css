@@ -470,7 +470,9 @@ i {
   margin-bottom: 14px;
   line-height: 150%;
   text-align: justify;
-  text-justify: distribute;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+  word-spacing: -0.05em;
 }
 
 @media screen and (max-width: 665px) {
