@@ -167,7 +167,9 @@ i {
   text-align: center;
   max-width: 780px;
   text-align: justify;
-  text-justify: distribute;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+  word-spacing: -0.05em;
 }
 
 .parallax {
@@ -212,7 +214,9 @@ i {
 }
 .container-parallax p {
   text-align: justify;
-  text-justify: distribute;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+  word-spacing: -0.05em;
 }
 
 .parallax-1 {

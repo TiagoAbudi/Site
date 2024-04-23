@@ -21,7 +21,8 @@
     text-align: center;
     max-width: 780px;
     text-align: justify;
-    text-justify: distribute;
+    hyphens: auto;
+    word-spacing: -0.05em;
 }
 
 .parallax {
@@ -71,7 +72,8 @@
 
     p {
         text-align: justify;
-        text-justify: distribute;
+        hyphens: auto;
+        word-spacing: -0.05em;
     }
 }
 
