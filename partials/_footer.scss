@@ -16,3 +16,12 @@
     color: $white-normal;
     text-decoration: none;
 }
+
+.logo-footer{
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+}

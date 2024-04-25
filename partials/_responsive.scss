@@ -18,6 +18,10 @@
         }
     }
 
+    .scroll{
+        font-size: 32px;
+    }
+
     .hero {
         min-height: 60vh;
 
@@ -73,5 +77,19 @@
 
     .parallax h1 {
         font-size: 48px;
+    }
+
+    .mapa{
+        width: 358px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .container-parallax {
+        max-width: 768px;
+    }
+
+    .services-content p {
+        max-width: 768px;
     }
 }

@@ -5,12 +5,20 @@
     border-radius: 25px;
     background-color: $white-dark;
     box-shadow: 10px 7px 5px $card-shadow;
+    flex-direction: column;
+    // overflow: hidden;
 }
+
+// .i4ewOd-pzNkMb-haAclf {
+//     display: none !important;
+// }
 
 .contact-form {
     margin-left: 10px;
     height: 380px;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .contate-nos-titulo {
@@ -91,8 +99,14 @@
 }
 
 .mapa {
-    border-radius: 15px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border: 0;
 }
+
+// iframe {
+//     margin-top:-50px;
+//   }
 
 .btn-enviar:hover {
     background-color: $red-dark;

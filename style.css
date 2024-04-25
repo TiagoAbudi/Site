@@ -52,7 +52,6 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
 }
 
 .tab {
@@ -96,7 +95,7 @@ i {
 
 .scroll {
   color: rgb(180, 43, 43);
-  font-size: 20px;
+  font-size: 37px;
 }
 
 .rolagem {
@@ -165,7 +164,7 @@ i {
   line-height: 150%;
   margin-bottom: 14px;
   text-align: center;
-  max-width: 780px;
+  max-width: 1440px;
   text-align: justify;
   -webkit-hyphens: auto;
           hyphens: auto;
@@ -194,7 +193,6 @@ i {
   font-size: 78px;
   z-index: 50;
   font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
   font-weight: 200;
 }
 
@@ -209,7 +207,7 @@ i {
 
 .container-parallax {
   width: 100%;
-  max-width: 720px;
+  max-width: 1440px;
   padding: 0 20px;
 }
 .container-parallax p {
@@ -232,7 +230,7 @@ i {
 }
 
 .parallax-4 {
-  background-image: url("../assets/Tire sua ideia do papel.jpg");
+  background-image: url("../assets/Tire_sua_ideia_do_papel-mobile.webp");
 }
 
 .parallax-5 {
@@ -275,6 +273,15 @@ i {
   text-decoration: none;
 }
 
+.logo-footer {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+}
+
 .form {
   width: -moz-fit-content;
   width: fit-content;
@@ -283,12 +290,15 @@ i {
   border-radius: 25px;
   background-color: rgb(237, 234, 239);
   box-shadow: 10px 7px 5px rgba(45, 75, 102, 0.5);
+  flex-direction: column;
 }
 
 .contact-form {
   margin-left: 10px;
   height: 380px;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .contate-nos-titulo {
@@ -369,7 +379,9 @@ i {
 }
 
 .mapa {
-  border-radius: 15px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border: 0;
 }
 
 .btn-enviar:hover {
@@ -469,6 +481,7 @@ i {
 .about-description h2 {
   font-size: 38px;
   margin-bottom: 24px;
+  font-weight: 500;
 }
 .about-description p {
   margin-bottom: 14px;
@@ -493,6 +506,9 @@ i {
 @media screen and (max-width: 768px) {
   .btn-whastapp img {
     max-width: 64px;
+  }
+  .scroll {
+    font-size: 32px;
   }
   .hero {
     min-height: 60vh;
@@ -538,6 +554,17 @@ i {
   }
   .parallax h1 {
     font-size: 48px;
+  }
+  .mapa {
+    width: 358px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .container-parallax {
+    max-width: 768px;
+  }
+  .services-content p {
+    max-width: 768px;
   }
 }
 @keyframes translateY {
