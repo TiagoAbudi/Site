@@ -219,7 +219,7 @@ i {
 }
 
 .parallax-1 {
-  background-image: url("../assets/Dashboard.png");
+  background-image: url("../assets/DashboardImg.png");
 }
 
 .parallax-2 {
@@ -231,18 +231,41 @@ i {
 }
 
 .parallax-4 {
-  background-image: url("../assets/Tire_sua_ideia_do_papel-mobile.webp");
+  background-image: url("../assets/Tire sua ideia do papel.jpg");
 }
 
 .parallax-5 {
-  background-image: url("../assets/imagem padrao.png");
+  background-image: url("../assets/Tela Relatorio.png");
 }
 
-.module h2 {
+.parallax-title {
+  display: flex;
+  align-items: center;
   margin-bottom: 40px;
+  justify-content: space-between;
+}
+.parallax-title h2 {
   font-size: 30px;
   font-weight: 900;
 }
+
+.btn-entrar-em-contato {
+  color: rgb(255, 255, 255);
+  font-size: 10px;
+  margin-left: 20px;
+  border-radius: 25px;
+  padding: 5px 10px;
+  background-color: rgb(211, 64, 64);
+  transition: background-color 0.8s;
+  opacity: 0;
+  animation: animate 1s ease-in-out 0.6s 1 forwards;
+}
+
+.btn-entrar-em-contato:hover {
+  border: 1px solid rgb(180, 43, 43);
+  background-color: rgb(180, 43, 43);
+}
+
 .module p {
   margin-bottom: 40px;
 }
@@ -296,7 +319,7 @@ i {
 
 .contact-form {
   margin-left: 10px;
-  height: 380px;
+  height: 450px;
   width: 100%;
   display: flex;
   justify-content: center;

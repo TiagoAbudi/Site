@@ -1,0 +1,131 @@
+.container-slider {
+    width: 75vw;
+    float: right;
+}
+
+.item {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 90%;
+    transform: translate(0, -50%);
+    border-radius: 25px;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    transition: 0.5s;
+}
+
+.item:nth-child(1),
+.item:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.item:nth-child(3) {
+    left: 50%;
+}
+
+.item:nth-child(4) {
+    left: calc(50% + 220px);
+}
+
+.item:nth-child(5) {
+    left: calc(50% + 440px);
+}
+
+.item:nth-child(n + 6) {
+    left: calc(50% + 660px);
+    opacity: 0;
+}
+
+.content-slide {
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    width: 300px;
+    text-align: left;
+    color: $white-normal;
+    transform: translate(0, -50%);
+    font-family: 'Montserrat', 'Sora', sans-serif;
+    display: none;
+}
+
+.item:nth-child(2) .content-slide {
+    display: block;
+}
+
+.name {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+    color: $red-light;
+}
+
+.des {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+    background-color: $primary-dark-50-percent;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.button-slide {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.6s 1 forwards;
+}
+
+@keyframes animate {
+    from {
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+
+.button-change{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    i{
+        color: $black-dark;
+    }
+    button{
+        color: $black-dark;
+        width: 40px;
+        height: 35px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        margin: 0 5px;
+        border: 1px solid $black-dark;
+        transition: 0.3s;
+    }
+    button:hover{
+        background: $white-dark;
+        color: $white-normal;
+    }
+}
+
+.div-slider{
+    position: relative;
+    height: 100vh;
+}
