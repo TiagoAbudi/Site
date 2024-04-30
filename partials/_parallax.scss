@@ -115,13 +115,12 @@
     border-radius: 25px;
     padding: 5px 10px;
     background-color: $red-light;
-    transition: background-color 0.8s;    
-    opacity: 0;
-    animation: animate 1s ease-in-out 0.6s 1 forwards;
+    transition: background-color 0.8s;
 }
 .btn-entrar-em-contato:hover {
     border: 1px solid $red-dark;
     background-color: $red-dark;
+    animation: translateY 0.8s infinite alternate;
 }
 
 .module {
