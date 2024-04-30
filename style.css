@@ -257,13 +257,12 @@ i {
   padding: 5px 10px;
   background-color: rgb(211, 64, 64);
   transition: background-color 0.8s;
-  opacity: 0;
-  animation: animate 1s ease-in-out 0.6s 1 forwards;
 }
 
 .btn-entrar-em-contato:hover {
   border: 1px solid rgb(180, 43, 43);
   background-color: rgb(180, 43, 43);
+  animation: translateY 0.8s infinite alternate;
 }
 
 .module p {

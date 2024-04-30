@@ -57,6 +57,7 @@ String.prototype.replaceAll = function (str1, str2, ignore) {
 function getSection(event) {
   event.preventDefault()
   campoProduto.setAttribute('value', event.target.getAttribute('id').substring(event.target.getAttribute('id').indexOf('-') + 1).replaceAll("-", " "));
+  campoNome.focus()
 }
 
 btns.forEach(btn => {
@@ -76,15 +77,15 @@ function getFieldValues(event) {
 btnEnvia.addEventListener('click', getFieldValues)
 
 
-let next = document.querySelector('.next')
-let prev = document.querySelector('.prev')
+// let next = document.querySelector('.next')
+// let prev = document.querySelector('.prev')
 
-next.addEventListener('click', function () {
-  let items = document.querySelectorAll('.item')
-  document.querySelector('.slide').appendChild(items[0])
-})
+// next.addEventListener('click', function () {
+//   let items = document.querySelectorAll('.item')
+//   document.querySelector('.slide').appendChild(items[0])
+// })
 
-prev.addEventListener('click', function () {
-  let items = document.querySelectorAll('.item')
-  document.querySelector('.slide').prepend(items[items.length - 1])
-})
+// prev.addEventListener('click', function () {
+//   let items = document.querySelectorAll('.item')
+//   document.querySelector('.slide').prepend(items[items.length - 1])
+// })
