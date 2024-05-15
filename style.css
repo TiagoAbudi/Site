@@ -180,10 +180,10 @@ i {
   width: 98.8vw;
   position: relative;
   overflow: hidden;
-  background-position: center;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
   -webkit-backgeround-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -528,33 +528,18 @@ i {
   }
   .parallax-1 {
     background-image: url("../assets/dash mobile.png");
-    max-width: 100%;
-    min-width: 300px;
-    height: auto;
   }
   .parallax-2 {
     background-image: url("../assets/gv mobile.png");
-    max-width: 100%;
-    min-width: 300px;
-    height: auto;
   }
   .parallax-3 {
     background-image: url("../assets/stock mobile.png");
-    max-width: 100%;
-    min-width: 300px;
-    height: auto;
   }
   .parallax-4 {
     background-image: url("../assets/tire sua ideia mobile.png");
-    max-width: 100%;
-    min-width: 300px;
-    height: auto;
   }
   .parallax-5 {
     background-image: url("../assets/realtorio mobile.png");
-    max-width: 100%;
-    min-width: 300px;
-    height: auto;
   }
   .parallax-title h2 {
     font-size: 20px;

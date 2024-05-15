@@ -9,40 +9,27 @@
     .hero h1 {
         font-size: 24px;
     }
+}
 
+@media screen and (max-width: 768px) {
     .parallax-1 {
         background-image: url("../assets/dash\ mobile.png");
-        max-width: 100%;
-        min-width: 300px;
-        height: auto;
     }
 
     .parallax-2 {
         background-image: url("../assets/gv\ mobile.png");
-        max-width: 100%;
-        min-width: 300px;
-        height: auto;
     }
 
     .parallax-3 {
         background-image: url("../assets/stock\ mobile.png");
-        max-width: 100%;
-        min-width: 300px;
-        height: auto;
     }
 
     .parallax-4 {
         background-image: url("../assets/tire\ sua\ ideia\ mobile.png");
-        max-width: 100%;
-        min-width: 300px;
-        height: auto;
     }
 
     .parallax-5 {
         background-image: url("../assets/realtorio\ mobile.png");
-        max-width: 100%;
-        min-width: 300px;
-        height: auto;
     }
 
     .parallax-title {
@@ -50,9 +37,6 @@
             font-size: 20px;
         }
     }
-}
-
-@media screen and (max-width: 768px) {
     .btn-whastapp {
         img {
             max-width: 64px;
