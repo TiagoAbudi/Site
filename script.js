@@ -66,12 +66,41 @@ btns.forEach(btn => {
 
 function getFieldValues(event) {
   event.preventDefault()
-  let nome = campoNome.value
-  let email = campoEmail.value
-  let produto = campoProduto.value
-  let mensagem = campoMensagem.value
 
   // FAZER A CHAMADA PARA A API COM ESSAS VARIAVEIS PARA SALVAR NO BANCO E GRAVAR NA TELA NOVA
+  const apiUrl = 'https://api.solumobi.com.br/teste/api/contatos-site';
+  const values = {
+    nome_completo: campoNome.value,
+    email: campoEmail.value,
+    produto: campoProduto.value,
+    mensagem: campoMensagem.value,
+  }
+  const token = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZGVzY3JpY2FvIjoic2l0ZSIsImlhdCI6MTcxNDc0NzY0OH0.Qvg5vy4uH2HqhBySbGYQqNBPwyz18odbYQ4OgGXyCT8'
+
+  const requestOptions = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': token
+    },
+    body: JSON.stringify(values)
+  };
+
+  fetch(apiUrl, requestOptions)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      outputElement.textContent = JSON.stringify(data, null, 2);
+    })
+    .catch(error => {
+      console.error
+
+        ('Error:', error);
+    });
 }
 
 btnEnvia.addEventListener('click', getFieldValues)

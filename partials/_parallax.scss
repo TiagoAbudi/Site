@@ -46,7 +46,7 @@
         text-align: center;
         font-size: 78px;
         z-index: 50;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-weight: 200;
     }
 }
@@ -77,23 +77,23 @@
 }
 
 .parallax-1 {
-    background-image: url('../assets/DashboardImg.png');
+    background-image: url("../assets/DashboardImg.png");
 }
 
 .parallax-2 {
-    background-image: url('../assets/Component\ 1.png');
+    background-image: url("../assets/Component\ 1.png");
 }
 
 .parallax-3 {
-    background-image: url('../assets/imagem\ padrao.png');
+    background-image: url("../assets/StockManager.png");
 }
 
 .parallax-4 {
-    background-image: url('../assets/Tire\ sua\ ideia\ do\ papel.jpg');
+    background-image: url("../assets/Tire\ sua\ ideia\ do\ papel.jpg");
 }
 
 .parallax-5 {
-    background-image: url('../assets/Tela\ Relatorio.png');
+    background-image: url("../assets/Tela\ Relatorio.png");
 }
 
 .parallax-title {
@@ -125,7 +125,7 @@
 
 .module {
     p {
-        margin-bottom: 40px;
+        margin-bottom: 10px;
     }
 }
 

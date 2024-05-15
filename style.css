@@ -227,7 +227,7 @@ i {
 }
 
 .parallax-3 {
-  background-image: url("../assets/imagem padrao.png");
+  background-image: url("../assets/StockManager.png");
 }
 
 .parallax-4 {
@@ -266,7 +266,7 @@ i {
 }
 
 .module p {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .module:last-child {
@@ -424,7 +424,7 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 5px;
 }
 
 .bg-home {
@@ -525,6 +525,39 @@ i {
 @media screen and (max-width: 480px) {
   .hero h1 {
     font-size: 24px;
+  }
+  .parallax-1 {
+    background-image: url("../assets/dash mobile.png");
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
+  }
+  .parallax-2 {
+    background-image: url("../assets/gv mobile.png");
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
+  }
+  .parallax-3 {
+    background-image: url("../assets/stock mobile.png");
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
+  }
+  .parallax-4 {
+    background-image: url("../assets/tire sua ideia mobile.png");
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
+  }
+  .parallax-5 {
+    background-image: url("../assets/realtorio mobile.png");
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
+  }
+  .parallax-title h2 {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 768px) {
