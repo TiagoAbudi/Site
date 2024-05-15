@@ -526,6 +526,8 @@ i {
   .hero h1 {
     font-size: 24px;
   }
+}
+@media screen and (max-width: 768px) {
   .parallax-1 {
     background-image: url("../assets/dash mobile.png");
   }
@@ -544,8 +546,6 @@ i {
   .parallax-title h2 {
     font-size: 20px;
   }
-}
-@media screen and (max-width: 768px) {
   .btn-whastapp img {
     max-width: 64px;
   }
